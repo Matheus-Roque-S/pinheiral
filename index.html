@@ -12,7 +12,7 @@
 
 <body>
     <header>
-        <div id="nome-header">
+        <div class="nome">
             <img src="imgs/logopinheiral.svg" alt="logo-pinheiral">
             <div style="display: flex; flex-direction: column; justify-content: center;">
                 <p style="font-size: x-large;color: #14321E;">PINHEIRAL</p>
@@ -70,6 +70,8 @@
             </section>
         </section>
 
+
+
         <section id="historia">
             <h1>História & Propósito</h1>
             <h2>Construindo e decorando lares na região desde 1977</h2>
@@ -104,6 +106,53 @@
 
                 </section>
             </section>
+
+
+            <section id="carrossel">
+                <div class="carrossel-container">
+                    <button class="carrossel-btn prev" id="prevBtn" aria-label="Slide anterior">&#10094;</button>
+
+                    <div class="carrossel-track-container">
+                        <ul class="carrossel-track">
+                            <li class="carrossel-slide">
+                                <img src="imgs/carrossel1.webp" alt="Destaque Pinheiral 1" width="680" height="453"
+                                    loading="lazy">
+                            </li>
+                            <li class="carrossel-slide">
+                                <img src="imgs/carrossel2.webp" alt="Destaque Pinheiral 2" width="680" height="453"
+                                    loading="lazy">
+                            </li>
+                            <li class="carrossel-slide">
+                                <img src="imgs/carrossel3.webp" alt="Destaque Pinheiral 3" width="680" height="453"
+                                    loading="lazy">
+                            </li>
+                            <li class="carrossel-slide">
+                                <img src="imgs/carrossel4.webp" alt="Destaque Pinheiral 4" width="680" height="453"
+                                    loading="lazy">
+                            </li>
+                            <li class="carrossel-slide">
+                                <img src="imgs/carrossel5.webp" alt="Destaque Pinheiral 5" width="680" height="453"
+                                    loading="lazy">
+                            </li>
+                            <li class="carrossel-slide">
+                                <img src="imgs/carrossel6.webp" alt="Destaque Pinheiral 6" width="680" height="453"
+                                    loading="lazy">
+                            </li>
+                        </ul>
+                    </div>
+
+                    <button class="carrossel-btn next" id="nextBtn" aria-label="Próximo slide">&#10095;</button>
+
+                    <div class="carrossel-nav" style="display: none;">
+                        <button class="indicador ativo" aria-label="Ir para imagem 1"></button>
+                        <button class="indicador" aria-label="Ir para imagem 2"></button>
+                        <button class="indicador" aria-label="Ir para imagem 3"></button>
+                        <button class="indicador" aria-label="Ir para imagem 4"></button>
+                        <button class="indicador" aria-label="Ir para imagem 5"></button>
+                        <button class="indicador" aria-label="Ir para imagem 6"></button>
+                    </div>
+                </div>
+            </section>
         </section>
 
         <section id="unidades">
@@ -124,6 +173,7 @@
                     <p>(17) 3405-9555</p>
                     <p>Ter a Sex: 7h - 18:30h<br>Sáb e Seg: 8h - 13h</p>
                     <button><img src="imgs/mapaicon.svg" alt="icone-mapa">Ver no Google maps</button>
+                    <button><img src="imgs/chaticon.svg" alt="">Fale conosco</button>
                 </section>
                 <section class="card-unidades">
                     <img src="imgs/empresaicon.svg" alt="">
@@ -135,6 +185,7 @@
                     <p>(17) 3405-9120</p>
                     <p>Seg a Sex: 7:30h - 18h<br>Sáb: 8h - 13h</p>
                     <button><img src="imgs/mapaicon.svg" alt="icone-mapa">Ver no Google maps</button>
+                    <button><img src="imgs/chaticon.svg" alt="">Fale conosco</button>
                 </section>
                 <section class="card-unidades">
                     <img src="imgs/empresaicon.svg" alt="">
@@ -146,6 +197,7 @@
                     <p>(17) 3485-9383</p>
                     <p>Seg a Sex: 7:30h - 18h<br>Sáb: 8h - 12h</p>
                     <button><img src="imgs/mapaicon.svg" alt="icone-mapa">Ver no Google maps</button>
+                    <button><img src="imgs/chaticon.svg" alt="">Fale conosco</button>
                 </section>
                 <section class="card-unidades">
                     <img src="imgs/empresaicon.svg" alt="">
@@ -157,6 +209,7 @@
                     <p>(17) 3836-9230</p>
                     <p>Seg a Sex: 7:30h - 18h<br>Sáb: 7:30h - 12h</p>
                     <button><img src="imgs/mapaicon.svg" alt="icone-mapa">Ver no Google maps</button>
+                    <button><img src="imgs/chaticon.svg" alt="">Fale conosco</button>
                 </section>
             </section>
         </section>
@@ -245,14 +298,33 @@
                 </section>
             </section>
         </section>
-
-        <section id="calculadora">
-
+    </main>
+    <footer>
+        <section id="estatisticas-footer">
+            <ul>
+                <li><img src="imgs/relogioicon.svg" alt="">Desde 1977 </li>
+                <li><img src="imgs/fabricaicon.svg" alt="">4 Unidades</li>
+                <li><img src="imgs/carrinhoicon.svg" alt="">+35.000 Produtos</li>
+                <li><img src="imgs/pessoaicon.svg" alt="">+70 Funcionários</li>
+            </ul>
         </section>
 
+        <section id="corpo-footer">
+            <div class="nome">
+                <img src="imgs/logopinheiral.svg" alt="logo-pinheiral">
+                <div style="display: flex; flex-direction: column; justify-content: center;">
+                    <p style="font-size: x-large;color: var(--branco);">PINHEIRAL</p>
+                    <p style="font-size: small; font-weight: 600; color: var(--laranja);">HOME CENTER</p>
+                </div>
+            </div>
+            <section id="dados-footer">
+                <p>© <script>document.write(new Date().getFullYear())</script> PINHEIRAL MATERIAIS PARA CONSTRUÇÃO LTDA. <br>Todos os direitos reservados.</p>
+                <p>CNPJ: 49.024.557/0001-51</p>
+                <p>Site desenvolvido por Matheus Roque</p>
+            </section>
+        </section>
 
-    </main>
-    <footer></footer>
+    </footer>
 
     <script src="js.js"></script>
 </body>
